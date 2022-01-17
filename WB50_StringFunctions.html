@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+
+    <script>
+        var str = "             This   is a string             ";
+        console.log(str);
+        var position = str.indexOf('is'); //first index of the given string.
+        position = str.lastIndexOf('is'); //last index of the given string.
+        
+        // Substring from a string
+        // method1 --> can take negative value and give string
+        var substr = str.slice(0,4);
+        console.log(substr);
+        // method2 --> cannot take negative value and give string.
+        var substr1 = str.substring(0,4);
+        console.log(substr1);
+        // method2 --> give int.
+        var substr2 = str.substr(0,4);
+        console.log(substr2);
+
+        // replace a string
+        var replaced = str.replace('string',"sam");
+        console.log(str);
+        console.log(replaced);
+
+        // to upper or lower case.
+        console.log(replaced.toUpperCase());
+        console.log(replaced.toLowerCase());
+
+        //Adding two srtings
+        var str2= str.concat(' new one.');
+        console.log(str2);
+
+        //Remove white spaces from both side of the string.
+        var str1= str.trim();
+        console.log(str1);
+
+        // charecter at a particular index.
+        var char = str.charAt(13);
+        var char1 = str.charCodeAt(13);
+        console.log(char);
+        console.log(char1);
+    </script>
+</body>
+
+</html>

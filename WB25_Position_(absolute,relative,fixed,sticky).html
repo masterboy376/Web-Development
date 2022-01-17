@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /* position is static by default */
+        .box{
+            display: inline-block;
+            border: 2px solid red;
+            width: 150px;
+            height: 150px;
+            margin: 20px;
+        }
+        .container{
+            border: 2px solid black;
+            border-radius: 10px;
+            margin: auto;
+            height: 900px;
+        }
+        #box1{
+            position: fixed;
+            /* fixed: fixed to a particular position on the screen while scrolling */
+            float: right;
+        }
+        #box2{
+            position: relative;
+            /* relative: relative to its normal position and will leave a gap at its normal position */
+            margin-top: 40px;
+        }
+        #box3{
+            position: absolute;
+            /* absolute: relative to to the position of its first parent */
+            margin-top: 100px;
+        }
+        #box4{
+            position: sticky;
+            /* sticky: stick to a particular position while scrolling */
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+    <div class="box" id="box1">1</div>
+    <div class="box" id="box2">2</div>
+    <div class="box" id="box3">3</div>
+    <div class="box" id="box4">4</div>
+    </div>
+</body>
+</html>

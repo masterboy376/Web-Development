@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h2>FORMS</h2>
+    <form action="WB4.js">
+        <!--use of label tag-->
+        <label for="name">NAME</label><br><!--just click on "NAME"-->
+        <input type="text" name="username" id="name"><br><br>
+
+        OCCUPATION <br> <input type="text" name="userwork" id=""><br><br>
+
+        RANK <br> <input type="text" name="userrank" id=""><br><br>
+
+        EXPERIENCE <br> <input type="text" name="userexp" id=""><br><br>
+
+        E-MAIL <br> <input type="email" name="useremail" id=""><br><br>
+
+        D.O.B <br> <input type="date" name="userdob" id=""><br><br>
+
+        <label for="eli">Are you eligible</label><br><!--just click on "Are you eligible"-->
+        <input type="checkbox" name="usereligibility" id="eli"><br><br>
+
+        SKILLS1 <br> BACKEND <input type="radio" name="userskill" id=""> FRONTEND <input type="radio" name="userskill" id=""> BOTH <input type="radio" name="userskill" id=""><br><br><!--only single check because name is same in all the rradio bottons-->
+
+        SKILLS2 <br> BACKEND <input type="radio" name="userskill1" id=""> FRONTEND <input type="radio" name="userskill2" id=""> BOTH <input type="radio" name="userskill3" id="" r><br><br><!--multiple check because name is different in all the rradio bottons-->
+
+        NUMBER <br> <input type="number" name="usernum" id=""><br><br>
+
+        <!--use of textarea tag-->
+        WRITE <br> <textarea name="MYText" id="" cols="100" rows="10"></textarea><br><br>
+
+        <!--"select" tag use-->
+        <label for="car">CAR</label><br>
+        <select name="myCar" id="car">
+            <option value="default">SELECT</option>
+            <option value="tesla">Tesla</option>
+            <option value="bug">Bugati</option>
+            <option value="por">porche</option>
+            <option value="al">Alto</option>
+        </select><br><br>
+
+        <input type="submit" value="Submit now">
+
+        <input type="reset" value="reset now"><br><br>
+
+    </form>
+    <!--name is used as a reference for object in backend-->
+</body>
+</html>

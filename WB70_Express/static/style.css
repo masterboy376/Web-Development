@@ -1,0 +1,86 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    background-color: rgb(253, 249, 249);
+}
+ul{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    background-color: rgb(92, 91, 91);
+    margin: auto;
+}
+li{
+    list-style: none;
+    padding: 3px 50px;
+    background-color: rgb(92, 91, 91);
+}
+a{
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+    background-color: rgb(92, 91, 91);
+    font-size: 20px;
+}
+nav{
+    display: flex;
+    align-items: center;
+    background-color: rgb(92, 91, 91);
+    padding: 18px 40px;
+}
+.container{
+    border: 2px solid rgb(182, 180, 180);
+    width : 50%;
+    margin: auto;
+    text-align: center;
+    margin: 40px auto;
+    margin-top: 40px;
+    border-radius: 10px;
+    
+}
+h1{
+    padding: 60px 0px;
+    color: rgb(17, 17, 17);
+    background-color: rgb(182, 180, 180);
+}
+.contact{
+    background-color: rgb(182, 180, 180);
+    padding-bottom: 40px;
+    display: flex;
+    flex-direction: column;
+}
+input{
+    margin: 15px auto;
+    width: 50%;
+    background-color: white;
+    padding: 15px 10px;
+    border :0px;
+    border-radius: 5px;
+
+}
+textarea{
+    margin: 15px auto;
+    border :0px;
+    border-radius: 5px;
+    width: 50%;
+    background-color: white;
+    padding: 30px 10px;
+}
+.btn{
+    margin: 15px auto;
+    border : 2px solid rgb(41, 39, 39);
+    color:rgb(41, 39, 39);
+    width: 30%;
+    background-color: white;
+    padding: 15px 10px;
+    border :0px;
+    border-radius: 5px;
+}
+.btn:hover, .btn:active{
+    color: rgb(218, 213, 213);
+    background-color: rgb(41, 39, 39);
+    cursor: pointer;
+}
+input:active, textarea:active{
+    border: 2px solid white;
+}

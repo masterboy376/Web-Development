@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .container {
+            display: flex;
+        }
+
+        .card {
+            /* box-shadow: inset/offset vertical-radius horizontal-radius blur-radius spread-radius rgba; */
+/* 
+            negative values of vertical-radius and horizontal-radius changees the direction of shadow */
+            /* where a in rgba determines darkness */
+            /* inset->shadow from inside */
+            /* noffset/none -> shadow from outside */
+            /* you can add multiple shadow by using commas */
+
+            border-radius: 6px;
+            padding: 23px 23px;
+            margin: 23px 23px;
+            background-color: greenyellow;
+            border: 2px solid black;
+
+            /* ------------------------------------------------------------------------------------------------- */
+
+            /* box-shadow: 8px 8px green;
+            box-shadow: -8px -8px green; */
+
+            box-shadow: 8px 8px 10px 0px rgb(74, 182, 74); /*third entry is blur radiue and fourth entry is spread radius*/
+            /* ------------------------------------------------------------------------------------------------- */
+
+        }
+        h1{
+            /* text-shadow: inset/offset vertical-radius horizontal-radius blur-radius rgba; */
+            font-size: 40px;
+            font-family: fantasy;
+            text-shadow: 8px 8px 10px rgba(255, 128, 0, 0.7);
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="card" id="card1">
+            <h1>card1</h1>
+            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Tempore numquam et voluptatem optio tempora
+                modi neque rerum, nostrum inventore aut, nisi corrupti labore rem, officiis error doloribus eius
+                commodi. Sapiente quas laborum eum quidem?</p>
+        </div>
+        <div class="card" id="card2">
+            <h1>card2</h1>
+            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Tempore numquam et voluptatem optio tempora
+                modi neque rerum, nostrum inventore aut, nisi corrupti labore rem, officiis error doloribus eius
+                commodi. Sapiente quas laborum eum quidem?</p>
+        </div>
+        <div class="card" id="card3">
+            <h1>card3</h1>
+            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Tempore numquam et voluptatem optio tempora
+                modi neque rerum, nostrum inventore aut, nisi corrupti labore rem, officiis error doloribus eius
+                commodi. Sapiente quas laborum eum quidem?</p>
+        </div>
+    </div>
+</body>
+
+</html>

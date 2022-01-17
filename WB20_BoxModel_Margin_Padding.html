@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+          box-sizing: border-box;/*Adjust padding wrt width*/
+          padding: 0px;
+          margin: 0px;
+        }
+        body{
+            background-color:rgb(245, 180, 234);
+        }
+        .container{
+            background-color: rgba(201, 127, 243, 0.507);
+            border: 3px solid rgb(84, 5, 104);
+            padding: 78px;
+            margin: 50px;
+            border-radius: 100px;
+        }
+        .container3{
+             /* this shortcut are aplicable to margin also */
+            /*padding: 78px 78px 78px 78px;-->padding: top right bottom left;*/
+            padding: 78px 78px; /* padding: y(top/bottom) x(left/right); */
+            margin: 50px;
+            border-radius: 100px;
+            background-color: rgba(201, 127, 243, 0.507);
+            border: 3px solid rgb(84, 5, 104);
+            width: 1000px;
+    
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <h3>This is heading</h3>
+        <p id="first">Lorem ipsum dolor sit amet consectetur adipisicing elit. Eum qui eius totam id accusamus, beatae aliquid nobis tempora itaque minima hic rerum, quam consequatur expedita reprehenderit quisquam fugit maiores quasi odio, atque quos necessitatibus neque ipsa commodi? Nam, sequi alias!</p><br><br>
+    </div>
+    <div class="container">
+        <h3>This is heading</h3>
+        <p id="second">Lorem ipsum dolor sit amet consectetur adipisicing elit. Eum qui eius totam id accusamus, beatae aliquid nobis tempora itaque minima hic rerum, quam consequatur expedita reprehenderit quisquam fugit maiores quasi odio, atque quos necessitatibus neque ipsa commodi? Nam, sequi alias!</p><br><br>
+    </div>
+    <div class="container3">
+        <h3>This is heading</h3>
+        <p id="third">Lorem ipsum dolor sit amet consectetur adipisicing elit. Eum qui eius totam id accusamus, beatae aliquid nobis tempora itaque minima hic rerum, quam consequatur expedita reprehenderit quisquam fugit maiores quasi odio, atque quos necessitatibus neque ipsa commodi? Nam, sequi alias!</p><br><br>
+    </div>
+</body>
+</html>

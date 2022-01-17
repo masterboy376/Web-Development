@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div class="container">
+        this is container
+    </div>
+
+    <script>
+         let now = new Date();
+         console.log(now);
+
+         let dt = new Date(0);// in milisecondes
+         console.log(dt);
+
+         let dt1 = new Date("2021-09-20");
+        //  print(dt1); // this will print the date on the paper
+        console.log(dt1);
+
+        // let dt2 = new Date(year, month, date, hour, min, sec, milisec);
+        let dt2 = new Date(2021, 05, 7,5 ,50,50.1000);
+        console.log(dt2);
+
+        //functions
+        let yr = now.getFullYear();
+        console.log(yr);
+        let date = now.getDate();
+        console.log(date);
+        let mn = now.getMonth();
+        console.log(mn);
+        let hr = now.getHours();
+        console.log(hr);
+        let min = now.getMinutes();
+        console.log(min);
+        let sec = now.getSeconds();
+        console.log(sec);
+        let day = now.getDay();
+        console.log(day);
+
+        now.setDate(300);
+        console.log(now);
+
+        now.setMinutes(50);
+        console.log(now);
+
+        now.setSeconds(690);
+        console.log(now);
+
+        // this will give number of miliseconds past
+        Date.now();
+    </script>
+    
+</body>
+</html>

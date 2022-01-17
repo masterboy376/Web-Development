@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        h1{
+            text-align: center;
+        }
+        .container{
+            height: 500px;
+            width: 100%;
+            border: 2px solid rgb(31, 30, 30);
+            border-radius: 10px;
+            display: flex;
+
+            /* ------------------------------------------------------------------------------------------------------ */
+
+            /* flex properties of flex contaianer */
+
+            flex-direction: row; /*row is by default*/
+            flex-wrap: wrap;/*used for responsive design --> default = no wrap */
+            flex-flow: row wrap;
+
+            /* horizontal */
+            justify-content: center;/*align items to cernter*/
+            justify-content: space-between; /*| |*/
+            justify-content: space-evenly; /* | | */
+            justify-content: space-around; /* |  | */       
+
+            /* vertical */
+            align-items: flex-start;/*top --> default*/
+            align-items: flex-end;/*buttom*/            
+            align-items: center;/*alig vertically center*/
+            align-items: stretch;/*even space in between during wraping*/
+        }
+        .item{
+            width: 190px;
+            border-radius: 10px;
+            background-color: rgb(221, 185, 145);
+            border: 2px solid rgb(221, 185, 145);
+            height: 200px;
+            margin: 10px;
+            padding: 3px;   
+        }
+
+        /* ---------------------------------------------------------------------------------------------------- */
+
+        /* flex properties for flex items */
+
+        /****************** SHORTCUT --> flex: grow shrink basis; ********************/
+
+        #item1{
+            order: 3;/*higher the order later it will be presented*/
+            flex-grow: 3;/*higher the value of flex-grow higher the box will grow*/
+            align-self: flex-start;/*vertical alignment of of individual item*/
+        }
+        #item2{
+            order: 2;/*higher the order later it will be presented*/
+            flex-shrink: 1;/*lower the this value haigher the shirnking*/
+
+            flex-basis: 120px;
+            /* note: when flex-direction is row then theiis will manage width and when flex-direction is column then theiis will manage height */
+            align-self: center;/*vertical alignment of of individual item*/
+        }
+        #item3{
+            order: 1;/*higher the order later it will be presented*/
+            flex-grow: 3;/*higher the value of flex-grow higher the box will grow */
+            flex: 3 null 190px;
+            align-self: flex-end;/*vertical alignment of of individual item*/
+        }
+
+
+        </style>
+</head>
+<body>
+    <h1>this is flex</h1>
+    <div class="container">
+        <div class="item" id="item1">first box</div>
+        <div class="item" id="item2">second box</div>
+        <div class="item" id="item3">third box</div>
+    </div>
+</body>
+</html>

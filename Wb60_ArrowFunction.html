@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <div class="container">
+        this is container
+    </div>
+    <script>
+        //long method
+        function greetLong() {
+            console.log("good morning");
+        }
+
+        //arrow function
+        let greet2 = () => {
+            console.log("good morning");
+        }
+        greetLong();
+        greet2();
+
+        //set timeout
+        setTimeout(() => {
+            console.log("set timeout");
+        }, 1000);
+
+        //shortest way
+        let sum = (a, b) => a + b;// it return a+b
+        console.log(sum(12, 4));
+
+        //ever shorter 
+        let half = a => a / 2;//only possible with function with arrgument
+        console.log(half(13));
+
+        greet = () => console.log('hello');// it can be also written like this
+        greet();
+//-----------------------------------------------------------------------------------------------------------------------
+        let obj = {
+            name: [1, 2, 3, 4, 5],
+            speak() {
+                this.name.forEach((element) => {
+                    console.log('num is ' + element);
+                });
+            }
+        }
+        obj.speak();
+//-----------------------------------------------------------------------------------------------------------------------
+        let obj1 = {
+            greeting: "Good Morning",
+            names: ["Harry", "Rohan", "SkillF", "DjKhiladi"],
+            speak() {
+                this.names.forEach((student) => {
+                    // with arrow funtion "this" will point towards parent (also know as lexical this)
+                    console.log(this.greeting + " Kukdoo Koo " + student);
+                });
+            }
+        }
+        obj1.speak();
+//-----------------------------------------------------------------------------------------------------------------------
+        let obj2 = {
+            name: [1, 2, 3, 4, 5],
+            speak() {
+                this.name.forEach(function f(element) {
+                    console.log('num is ' + element);
+                });
+            }
+        }
+        obj2.speak();
+//-----------------------------------------------------------------------------------------------------------------------
+        let obj3 = {
+            speak(){
+                let name= [1,2,3,4,5];
+                name.forEach(function s(element){
+                    console.log('num is '+element);
+                });
+            }
+        }
+        obj3.speak();
+
+
+    </script>
+
+</body>
+
+</html>

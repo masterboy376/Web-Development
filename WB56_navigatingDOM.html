@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <nav class="container" id="navi">
+        hi
+    </nav>
+    <div class="container" id="main">
+        <ul>
+            <li>home</li>
+            <li>contact us</li>
+            <li>about us</li>
+            <li>services</li>
+            <li>more</li>
+        </ul>
+    </div>
+
+    <script>
+        // by ID
+        let main = document.getElementById("main");
+        console.log(main);
+
+        // by ID
+        let navi = document.getElementById('navi');
+        console.log(navi);
+
+        console.log(main.innerHTML);
+        console.log(navi.innerHTML);
+
+        // let add = main.innerHTML = "<li>home</li>";
+        // console.log(main.innerHTML);
+        // this will change the items in the id main, so it can be used to make some nice animations.
+
+        //by class
+        let container = document.getElementsByClassName('container');
+        console.log(container[1]);
+        console.log(container[0]);
+
+        // by tag name
+        let a = document.getElementsByTagName('li');
+        console.log(a);
+
+        // by name --> node js stuff
+        let b = document.getElementsByName('navi');
+        console.log(b);
+
+        // by css selectors
+        // all the css selectors will work here
+        let cssSelector = document.querySelectorAll(".container");// It will select all the elements with .container class
+        console.log(cssSelector);
+        let cssSelector1 = document.querySelector(".container");// It will select first elements with .container class
+        console.log(cssSelector1);
+        let cssSelector2 = document.querySelectorAll("#main li");
+        console.log(cssSelector2);
+
+        let add = cssSelector2[0].innerHTML="hi";
+        console.log(add);
+        console.log(cssSelector2);
+
+</script>
+
+</body>
+
+</html>

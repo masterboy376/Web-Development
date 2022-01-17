@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        // 1 for loop
+        let num =[60,9,8,7,6,5,6];
+        for( let i =0; i<=6; i++){
+            console.log("num is "+num[i]);
+        }
+
+        // 2 for each
+        num.forEach(function func(number){
+               console.log("num is "+number+" in mordern js");
+        });
+
+        // 3 for of
+        for(numbers of num){
+            console.log(numbers);
+        }
+
+        // 4 for in
+        let person1= {
+            name : "sam",
+            salary : 2000000000,
+            work: "multiple works",
+        } 
+        for(info in person1){
+            console.log(`The ${info} of person is ${person1[info]}.`);
+        }
+
+        // 5 while
+        let i =0;
+        while(i<=4){// first the condition will be checked and then the code is executed.
+            console.log(`The value of the vriable i is ${i}.`);
+            i++;
+        }
+
+        // 6 do-while
+        let b =0;
+        do{// first the code is executed and then the condition will be checked.
+            console.log(`The value of the vriable b is ${b}.`);
+            b++;
+        }while(b<=4);
+
+    </script>
+</body>
+</html>

@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div>Hello! node.js</div>
+    <script>
+        let m = Math;
+        console.log(m);
+
+        //Constants
+        console.log('Maath.E',Math.E);
+        console.log('MAth.PI',Math.PI);
+        console.log('Math.LN2',Math.LN2);
+        console.log('Math.SQRT1_2',Math.SQRT1_2);
+        console.log('Math.SQRT2',Math.SQRT2);
+
+        //function
+        console.log(Math.round(35.67), Math.round(65));
+        console.log(Math.pow(3,3000));
+        console.log(Math.sqrt(45));
+        console.log(Math.ceil(5.8));// round up
+        console.log(Math.floor(5.8));//round down
+        console.log(Math.abs(-4.78));//modulus
+        console.log(Math.sin(Math.PI));//entry in radian
+        console.log(Math.tan(Math.PI/2));
+        console.log(Math.min(400.45555555,5,6));
+        console.log(Math.max(555555,54,4));
+
+        //Generating a random number(between a and b)
+        // formula = a + (b-a)*Math.random(); // not this formula
+        let r = Math.random();// a random number between 0 and 1
+        console.log("THE RANDOM NUMBER BETWEEN 50 AND 100 IS", (50 + (100 - 50)*r));
+        
+
+    </script>
+</body>
+</html>

@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        :root{ /* variable here can be used anyehere */
+            --primary-color:rgb(0, 140, 255);
+            --danger-color:rgb(238, 53, 53);
+            --maxw:200px;
+            --maxh:200px;
+        }
+        .box{/*variable can only be used only in .box*/
+            --box-color:rgba(215, 53, 236, 0.829);
+            background-color: var(--box-color);
+            box-shadow: 5px 5px 10px var(--box-color);
+            width: var(--maxw);
+            height: var(--maxh);
+            border: 2px solid var(--danger-color);
+            margin: 2px 9px;
+        }
+        .container{
+            display: flex;
+            justify-content: center;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="box">hi</div>
+        <div class="box">hello</div>
+        <div class="box">bye</div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,14 @@
+{
+  "name": "wb85_mongoose",
+  "version": "1.0.0",
+  "description": "",
+  "main": "WB85_Mongoose.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "mongoose": "^6.0.11"
+  }
+}

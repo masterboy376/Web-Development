@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .container{
+            margin:auto;
+            width: 50%;
+            text-align: center;
+            background-color: rgb(230, 212, 229);
+            border: 2px solid rgb(221, 178, 185);
+            border-radius: 10px;
+        }
+        #btn{
+            padding: 5px 10px;
+            background: rgb(204, 166, 140);
+            margin: auto;
+            border: 2px solid rgb(219, 168, 145);
+            border-radius: 10px;
+            margin: 10px 0px;
+        }
+        #btn:hover{
+            background-color: rgb(201, 131, 131);
+        }
+
+    </style>
+</head>
+<body>
+    <!-- Browser event:
+    click
+    contextmenu
+    mouse movement
+    focus
+    DOMcontentloaded
+    submit
+    transitionend -->
+    <div class="container">
+        <h2>heading</h2>
+        <p id="para">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Assumenda corrupti laborum, soluta facilis tempore unde quasi harum aut recusandae molestiae nisi ipsam rerum explicabo et ullam quaerat expedita quos laboriosam placeat sit temporibus quae culpa. Dolor, ex! Tempore officiis dicta recusandae labore officia, est voluptates magnam, vitae saepe ad modi! Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatibus quidem dolores sed quo laudantium exercitationem beatae omnis, neque labore enim aliquid provident debitis dolorum quod sunt qui dignissimos saepe facere vitae eveniet repellat veniam cum? Enim qui molestias quisquam temporibus maiores ipsa voluptates animi asperiores aut dolorum harum, laboriosam laborum illum corporis perspiciatis culpa corrupti autem illo vero voluptatum earum quia veniam quis quam. Blanditiis iure veniam magnam aut repudiandae eaque aliquid laboriosam expedita quos? Repellendus quia ab saepe recusandae laudantium rerum impedit voluptatum blanditiis ullam vitae! Accusantium aliquid sapiente libero ex molestiae similique consectetur dolore, doloribus repellat, architecto aut cum tenetur? Explicabo aperiam consequatur maiores rem et ducimus, atque sed, cupiditate molestias omnis consectetur saepe amet labore harum similique distinctio nulla expedita esse repudiandae soluta cumque doloribus quas. Deserunt inventore facere fugiat reprehenderit ea, dolor corrupti tempora impedit officia voluptates ullam, doloribus illo repellat harum atque repellendus praesentium, aperiam ipsa laborum accusantium! Officia nostrum, ab nesciunt vero dolores neque tempora magni, libero eum illum dolore laboriosam voluptatibus facere temporibus nisi deserunt voluptatem mollitia id necessitatibus et ea sint excepturi ad error? Corporis, dolorum a culpa suscipit ad animi quos expedita ipsum tempore praesentium accusantium ipsa totam nesciunt quisquam? Odio deserunt cupiditate dicta fugit quia tempora qui, distinctio vitae adipisci, ipsum at autem, enim unde. Aliquid et cupiditate, ducimus blanditiis assumenda sit consectetur hic accusantium nostrum quae repudiandae velit ad facere? Quidem esse veritatis qui facilis, maxime beatae perferendis ex impedit doloribus pariatur facere! Voluptates voluptate accusantium animi molestiae nemo. Voluptas incidunt quo aliquam sapiente modi sint eos tempora quia voluptates nostrum error nulla quaerat fuga cum, dolore veniam similique dolor tempore ea at? Eligendi necessitatibus libero in quibusdam officia alias error sapiente fugiat accusantium cupiditate? Est, quisquam rerum alias, reiciendis, officiis ipsum maiores debitis aspernatur voluptates perferendis quasi. Temporibus, at vero incidunt qui ratione quod consequatur ut dicta magni adipisci quos atque eveniet tenetur aut eum nihil sequi iusto. Ab, obcaecati? Ipsa eveniet perferendis natus maxime asperiores dicta, est facilis eaque voluptates accusantium sint quos nemo reprehenderit veniam sed soluta aut nam repudiandae beatae. Et cupiditate dicta quaerat earum temporibus modi. Sequi illum dolor quidem, perferendis quasi architecto nisi velit omnis iusto fugiat accusamus soluta exercitationem fuga reprehenderit neque natus dolorem ipsum rerum iste pariatur cumque molestiae obcaecati necessitatibus unde. Accusamus hic fugit reiciendis magnam quasi omnis eius, aliquid facere? Quas debitis, eos pariatur tempora officia asperiores exercitationem sequi consequuntur. Adipisci ipsum rerum beatae nostrum impedit labore saepe, reprehenderit repellendus quasi ea repellat libero sapiente consequuntur nisi at odit esse? Distinctio nobis officiis et sequi possimus quam, ducimus suscipit hic illum numquam praesentium repellat ut ipsam autem consequatur cumque sint, reprehenderit in. Modi voluptates quae et eaque placeat, in laudantium quibusdam incidunt culpa nemo necessitatibus adipisci nam! Blanditiis, recusandae! Corrupti accusantium possimus fugit. Dolorum architecto obcaecati in eius consequatur reiciendis error? Non dicta mollitia pariatur officia quis assumenda quibusdam eius numquam, repellendus natus tempore voluptatem itaque, suscipit doloremque blanditiis. Est accusamus odit dolore fugit porro. Architecto illo voluptates neque.
+        </p>
+        <button id="btn" onclick="toggleHide()">show less</button>
+    </div>
+
+    <script>
+        let para = document.getElementById('para');
+        para.addEventListener('mouseover', function run(){
+            alert('mouse on the para');
+        });
+        para.addEventListener('mouseout', function run(){
+            alert('mouse out of para');
+        });
+//------------------------------------------------------------------------------------------------------------------------
+       function toggleHide(){
+           let btn = document.getElementById('btn');
+           let para = document.getElementById('para');
+           if(para.style.display!='none'){
+               para.style.display='none';
+               btn.innerHTML='show more';
+           }
+           else{
+               para.style.display='block';
+               btn.innerHTML='show less';
+           }
+
+       }
+    </script>
+    
+</body>
+</html>

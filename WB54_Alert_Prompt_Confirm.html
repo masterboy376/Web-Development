@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div class="container">this is page</div>
+    <script>
+        // alert
+        let a =  alert("this is a message");// modal window
+        console.log(a);
+        
+        // prompt
+        let name = prompt("what is your name?", "guest");
+        console.log(name);
+
+        // confirm
+        let deletepost = confirm("do you want to delete?");
+        console.log(deletepost);
+        if(deletepost==true){
+        console.log("deleted success full");
+        }
+        else{
+            console.log("did not delete the post");
+        }
+
+        // quick quiz
+        let usreAge = prompt("what is your age?");
+        if(usreAge>=18){
+            alert("your are allowed in the club.");
+        }
+        else{
+            alert("free entry is not allowed for you need to pay some extra fee.");
+            let confirmation=  confirm("we are charging the extra fee, is it okay?");
+            if(confirmation == true){
+                alert("entry allowed!");
+            }
+            else {
+                alert("entry denied!");
+            }
+        }
+    </script>
+</body>
+</html>

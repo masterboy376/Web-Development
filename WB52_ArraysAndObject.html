@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+    <script>
+        // varialbes
+        let myvar = 30;
+        let myvar1 = "string";
+        let myvar2 = true;
+        let myvar3 = null;
+        let myvar4 = undefined;
+//-----------------------------------------------------------------------------------------------------------------------
+        // Object
+        let sam={
+            name: "sambhav kaushik",
+            salary: 10000000000000000000000000000000,
+            "salary 2":99999999,
+            'salary 3':99999999,
+        }
+        console.log(sam);
+        // console.log(sam[salary 2]);// error
+        console.log(sam['salary 2']);// correct
+        console.log(sam['salary 3']);// correct
+        console.log(sam["salary 2"]);// correct
+        console.log(sam["salary 3"]);// correct
+//-----------------------------------------------------------------------------------------------------------------------
+        // special object
+        let name=[1,true,null,'sam'];
+        console.log(name);
+        console.log(name[0]);
+        console.log(name[1]);
+        console.log(name[2]);
+        console.log(name[3]);
+        let arrLength = name.length;
+        console.log(arrLength);
+        name=name.sort();
+        console.log(name);
+        // add something at the end
+        name.push('last');
+        console.log(name);
+
+        let name1= new Array(20);
+        name1.push('hi');
+        console.log(name1);
+//-----------------------------------------------------------------------------------------------------------------------        
+    </script>
+</body>
+</html>

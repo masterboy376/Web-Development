@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .container{
+            margin: auto;
+            width: 50%;
+            text-align: center;
+            margin-top: 100px;
+            padding: 40px 0px;
+            background-color: rgb(252, 251, 225);
+            border: 2px solid rgb(175, 175, 131);
+            border-radius: 10px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <span id="time"></span>
+        </div>
+    
+    <script>
+        // setTimeOut --> allows us to run the the function only once after the given interval
+        // setInterval --> allows us to run the the function repeatedly after the given interval
+
+        // function tellYourName(num){
+        //    const name = prompt('What is your name? Please enter here');
+        //    alert("hello "+num)
+        // }
+        
+        // // define the function
+        // setTimeout(() => {
+        //    let name = prompt('What is your name? Please enter here');
+        // }, 5000);
+
+        // // predefined function
+        // setTimeout(tellYourName, 15000, "1");// no paranthesis after function name
+//----------------------------------------------------------------------------------------------------------------------
+        // use of clearTimeOut
+        // function request(name){
+        //    alert("Please, sign up to our website "+name);
+        // }
+        // let name = prompt("please, enter your name");
+        // timeout = setTimeout(request, 5000, name);
+        // console.log(timeout);
+
+        // // request already full filled by the user
+        // if(true){
+        //     clearTimeout(timeout);
+        // }
+//----------------------------------------------------------------------------------------------------------------------
+        // Note: setInterval also work in the similar way
+//----------------------------------------------------------------------------------------------------------------------
+// displaying time in your website
+        let clock = document.getElementById('time');
+        clock.addEventListener('mouseover', function run(){
+            alert('mouse on the clock');
+        });        
+
+        function displayTime(){
+            time = new Date();
+            console.log(time);
+            document.getElementById('time').innerHTML= time;
+        }
+        setInterval(displayTime, 1000);
+
+    </script>
+</body>
+</html>

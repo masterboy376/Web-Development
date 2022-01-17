@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        html{
+            font-size: 25px;
+        }
+        .container{
+            width:100vw;/* occupy complete width of the screen */
+            height:100vh;/* occupy complete height of the screen */
+            border: 2px solid red;
+            font-size: 10px;
+        }
+        h1{
+            text-align: center;
+        }
+        #first{
+            font-size: 3em; /* it will be 5 times the size of parent */
+            padding: 3em; /* it will be 3 times of font size (parent)*/
+        }
+        #second{
+            font-size: 3rem; /* it will be 5 times the size of html setting */
+            padding: 3rem; /* it will be 3 times of font size of html setting*/
+        }
+
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1 id="first">Heading of div container 1</h1>
+        <h1 id="second">Heading of div container 2</h1>
+        <h1 id="third">Heading of div container 3</h1>
+    </div>
+</body>
+</html>

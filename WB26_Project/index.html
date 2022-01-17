@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="WB26_CSS/stylesheet.css">
+    <style>
+        body{
+            margin: 0px;
+            padding: 0px;
+            background-image: url("IMG/yoga.jpg");
+            /* max-width: fit-content;  */
+            max-height: fit-content;          
+            color:black;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+        .left{
+            display: inline-block;
+            position: absolute;
+            left: -50px;
+            top: 15px;
+            width: 200px;
+            height: 200px;
+            text-align: center;
+        }
+        .left img{
+            width: 40px;
+            height: 50px;
+            padding-bottom: 0px;
+        }
+        .left div{
+            font-family: cursive;
+            font-size: 15px;
+            font-weight: bold;
+
+        }
+        
+        .center{
+            display: block;
+            width: 40%;
+            margin: 20px auto;
+            
+        }
+        .right{
+            position: absolute;
+            right: 34px;
+            top: 20px;
+            display: inline-block;
+        }
+        .navbar li{
+            display: inline-block;
+            padding: 25px 0px;
+        }
+        .navbar li a{
+            text-decoration: none;
+            color: white;
+            padding: 25px 29px;
+            /* font-size: 15px; */
+        }
+        .navbar li a:hover,.navbar li a.active{
+           background-color: rgb(48, 47, 47);
+           border-radius: 10px;
+           color: rgb(172, 170, 170);
+        }
+        .navbar ul{
+            list-style-type: none;
+            padding-left: 40px;
+        }
+        .navbar{
+            background-color: rgb(27, 27, 27);
+            border-radius: 10px;
+        }
+        .btn{
+            padding: 10px;
+            margin: 0px 5px;
+            border-radius: 10px;
+            color: white;
+            cursor: pointer;
+            background-color: rgb(27,27,27);
+            border: 0px;
+        }
+        .btn:hover{
+            background-color: rgb(48, 47, 47);
+            color: rgb(172, 170, 170);
+        }
+        .container{
+            /* border: 1px solid rgb(27, 27, 27); */
+            margin: 60px 10px;
+            margin-bottom: 0px;
+            padding: 75px;
+            width: 30%;
+            border-radius: 10px;
+        }
+        h1{
+            font-size: 30px;
+            text-align: center;
+        }
+        .form-group input{
+            text-align: center;
+            margin: 5px auto;
+            display: block;
+            width: 250px;
+            padding: 5px 10px;
+            border-radius: 10px;
+            border: 0px solid rgb(27, 27, 27); 
+            background-color: rgb(240, 238, 229);
+        }
+        .form-group input:active{
+            border: 1px solid rgb(27, 27, 27);
+        }
+        #b3{
+            display: block;
+            margin: 10px auto; 
+            width: 250px;
+            padding: 5px 10px;
+        }
+        
+    </style>
+</head>
+<body>
+   <header class="header">
+       <div class="left">
+           <!-- left for logo -->
+           <img src="IMG/logo2.png" alt="Image">
+           <div>Alpha Fit</div>
+       </div>
+       <div class="center">
+           <!-- center for navbar -->
+           <ul class="navbar">
+               <li><a href="#" class="active">Home</a></li>
+               <li><a href="#">About us</a></li>
+               <li><a href="#">Location</a></li>
+               <li><a href="#">Contact us</a></li>
+           </ul>
+       </div>
+       <div class="right">
+           <!-- right box for button or search -->
+           <button class="btn" id="b1">Memberships</button>
+           <button class="btn" id="b2">Contact us</button>
+       </div>
+   </header>
+   <div class="container">
+       <h1>Turn the dream of being fit, into reality!</h1>
+       <form action="WB26_JS/index.js">
+    <div class="form-group">
+        <input type="text" name="" id="" placeholder="Enter your name">
+    </div>
+    <div class="form-group">
+        <input type="email" name="" id="" placeholder="Enter your E-mail address">
+    </div>
+    <div class="form-group">
+        <input type="number" name="" id="" placeholder="Enter membership duration(in months)">
+    </div>
+    <div class="form-group">
+        <input type="text" name="" id="" placeholder="Enter your locality">
+    </div>
+    <button class="btn" id="b3">Submit</button>
+</form>
+   </div>
+</body>
+</html>

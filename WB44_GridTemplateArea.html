@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .grid {
+            display: grid;
+            gap: 0.5rem;
+            grid-template-areas: 
+            'navbar navbar navbar navbar'
+            'section section section aside'
+            'footer footer footer footer';
+        }
+
+        .box {
+            background-color: yellow;
+            border: 2px solid black;
+            padding: 40px 40px;
+        }
+
+        #navbar{
+            grid-area: navbar;
+        }
+
+        #section{
+            grid-area: section;
+        }
+        #aside{
+            grid-area: aside;
+        }
+        footer{
+            grid-area:footer;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="grid">
+        <div class="box" id="navbar">navbar</div>
+        <div class="box" id="section">sectionsantium tenetur ipsam? Vitae.</div>
+        <div class="box" id="aside">aside !</div>
+        <footer class="box">footer</footer>
+    </div>
+</body>
+
+</html>

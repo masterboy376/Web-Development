@@ -1,0 +1,18 @@
+{
+  "name": "wb69_npm",
+  "version": "1.0.0",
+  "description": "THIS IS SAM'S PACKAGE",
+  "main": "WB69_npm.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "nice"
+  ],
+  "author": "Sambhav",
+  "license": "ISC",
+  "dependencies": {
+    "express": "~4.17.1",
+    "slugify": "~1.6.0"
+  }
+}

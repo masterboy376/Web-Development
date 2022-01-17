@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .container{
+            background-color:greenyellow ;
+        }
+        .box{
+            /* animation: animation-name animation-duration animation-timing-function animation-delay animation-itration-count animation-fill-mode; */
+
+            background-color: cadetblue;
+            width:250px;
+            height:250px;
+            position: relative;
+
+            animation-name: sam1;
+
+            animation-duration: 1s;/*duraton of one animation */
+
+            animation-iteration-count: 1;
+
+            animation-fill-mode: forwards;/*this we make the properties in to real*/
+
+            animation-timing-function: ease-out;/*initially fast and finally slow*/
+            /*animation-timing-function: ease-in:*//*initially fast and finally slow*/
+
+            animation-delay: 1s;/*delay in animation*/
+
+            animation-direction: reverse; /*direction of animation*/
+
+        }
+        @keyframes sam1 {
+            0%{
+                top: 0px;
+                left: 0px;
+            }
+            20%{
+                top: 250px;
+                left: 0px;
+            }
+            60%{
+                top: 250px;
+                left: 250px;
+            }
+            80%{
+                top: 0px;
+                left: 250px;
+            }
+            100%{
+                top: 0px;
+                left: 0px;
+            }
+        }
+        @keyframes sam {
+            from{
+                width: 200px;
+                height: 200px;
+            }
+            to{
+                width: 400px;
+                height: 400px;
+            }
+          
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="box">
+            this is box
+        </div>
+    </div>
+</body>
+</html>

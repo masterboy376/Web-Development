@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .grid {
+            display: grid;
+            gap: 0.5rem;
+            grid-template-areas:
+                'nav nav nav nav'
+                'section section section aside'
+                'footer footer footer footer';
+        }
+
+        .box {
+            background-color: yellow;
+            border: 2px solid black;
+            padding: 40px 40px;
+        }
+
+        nav.box {
+            grid-area: nav;
+            text-align: center;
+            padding: 20px 40px;
+        }
+
+        section {
+            grid-area: section;
+        }
+
+        aside {
+            grid-area: aside;
+        }
+
+        footer.box {
+            grid-area: footer;
+        text-align: center;
+        padding: 20px 40px;
+        }
+
+        @media only screen and (max-width: 550px) {
+            body {
+                background-color: black;
+            }
+
+            .grid {
+                display: grid;
+                gap: 0.5rem;
+                grid-template-areas:
+                    'nav nav nav nav'
+                    'aside aside aside aside'
+                    'section section section section'
+                    'footer footer footer footer';
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="grid">
+        <nav class="box">
+            Home About Contact Services
+        </nav>
+        <section class="box">
+            <h2>Learn css</h2>
+        </section>
+        <aside class="box">
+            <h1>More</h1>
+        </aside>
+        <footer class="box">
+            bye
+        </footer>
+    </div>
+</body>
+
+</html>

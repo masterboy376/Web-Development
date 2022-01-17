@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        h1{
+            background-color: rosybrown;
+            font-size: 200px;
+            text-align: center;
+        }
+        p{
+            text-align: center;
+            font-size: 35px;
+        }
+        div p{
+            background-color: seagreen; /* all para inside div */
+        }
+        div li p{
+            color: white;/*p is inside li which is inside div.*/
+        }
+        div > p{
+            color: tomato;/*direct child of div*/
+        }
+        div + p{
+            font-size: 90px;/*previous element of p should be div for this selector*/
+        }
+
+    </style>
+</head>
+<body>
+    <h1>heading</h1>
+    <div class="container">
+        <div class="row">
+            <ul>
+                <li class="item"><p>this is list paragraph.</p></li>
+                <li>this will not get affected</li>
+            </ul>
+            <p>this is paragraph</p>
+        </div>
+        <p>this is outer paragraph</p>
+    </div>
+    <p>this is outer most paragraph</p>
+</body>
+</html>
